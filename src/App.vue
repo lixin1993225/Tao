@@ -1,16 +1,19 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
-  </div>
+    <div id="app">
+        <router-view/>
+        <bottomTabs />
+    </div>
 </template>
 
 <script>
-export default {
-  name: 'App'
-}
+    import  bottomTabs from './components/Tabs'
+    export default {
+        name: 'App',
+        components:{
+            bottomTabs,
+        }
+    }
 </script>
-
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
