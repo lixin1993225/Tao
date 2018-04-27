@@ -4,8 +4,11 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import './assets/styles/main.css'
+import './assets/libaray/rem.js'
 Vue.config.productionTip = false
-
+Vue.prototype.$gorouter = function(path){
+	this.$router.push(path)
+}
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

@@ -1,11 +1,9 @@
 <template>
-	<div class="index">
-		<p>1</p>
-	</div>
+	<p>2</p>
 </template>
 <script>
-	export default {
-		name:'index'
+	export default{
+		name:'type'
 	}
 </script>
 <style lang="stylus" scoped>
