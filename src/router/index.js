@@ -7,36 +7,36 @@ const ShopsPage = () => import(/*webpackChunkName:'index'*/ '@/components/pages/
 const MyCnterPage = () => import(/*webpackChunkName:'index'*/ '@/components/pages/mycenter.vue');
 Vue.use(Router)
 export default new Router({
-	 mode:'history',
+	mode:'history',
 	routes: [
 		{
 		    path: '/',
-		    name: 'index',
+		    name: 'IndexOne',
 		    component: indexPage,
 		    children:[]
 		},
 		{
-			path:'index',
-			name:'index',
+			path:'/index',
+			name:'IndexOne',
 			component:indexPage,
 			children:[]
 
 		},
 		{
-			path:'type',
-			name:'type',
+			path:'/type',
+			name:'TypeOne',
 			component:TypePage,
 			children:[]
 		},
 		{
-			path:'shops',
-			name:'shops',
+			path:'/shops',
+			name:'ShopsOne',
 			component:ShopsPage,
 			children:[]
 		},
 		{
-			path:'mycenter',
-			name:'mycenter',
+			path:'/mycenter',
+			name:'MycenterOne',
 			component:MyCnterPage,
 			children:[]
 		}

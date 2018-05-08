@@ -3,7 +3,7 @@
 </template>
 <script>
 	export default{
-		name:'type'
+		name:'TypeOne'
 	}
 </script>
 <style lang="stylus" scoped>

@@ -3,7 +3,7 @@
 </template>
 <script>
 	export default {
-		name:'shops'
+		name:'ShopsOne'
 	}
 </script>
 <style lang="stylus" scoped>
