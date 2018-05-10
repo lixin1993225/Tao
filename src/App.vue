@@ -1,12 +1,12 @@
 <template>
     <div id="app">
-        <router-view/>
+        <router-view />
         <bottomTabs />
     </div>
 </template>
 
 <script>
-    import  bottomTabs from './components/Tabs'
+    import  bottomTabs from './components/Tabs.vue'
     export default {
         name: 'App',
         components:{

@@ -1,9 +1,9 @@
 <template>
 	<div class="index">
-		<p>1</p>
+		<router-view></router-view>
 	</div>
 </template>
-<script>
+<script> 
 	export default {
 		name:'IndexOne'
 	}
