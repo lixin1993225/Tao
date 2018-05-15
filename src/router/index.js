@@ -19,7 +19,7 @@ export default new Router({
 		{
 		    path: '/',
 		    name: 'IndexOne',
-		    component: indexPage,
+		    component: resolve=>require(['../components/pages/index'],resolve),//indexPage,
 		    children:[
 		    	{
 		    		path:'',
@@ -31,7 +31,7 @@ export default new Router({
 		{
 			path:'/index',
 			name:'IndexOne',
-			component:indexPage,
+			component:resolve=>require(['../components/pages/index'],resolve),//indexPage,
 			children:[
 		    	{
 		    		path:'',
@@ -49,19 +49,19 @@ export default new Router({
 		{
 			path:'/type',
 			name:'TypeOne',
-			component:TypePage,
+			component:resolve=>require(['../components/pages/type'],resolve),//TypePage,
 			children:[]
 		},
 		{
 			path:'/shops',
 			name:'ShopsOne',
-			component:ShopsPage,
+			component:resolve=>require(['../components/pages/shops'],resolve),//ShopsPage,
 			children:[]
 		},
 		{
 			path:'/mycenter',
 			name:'MycenterOne',
-			component:MyCnterPage,
+			component:resolve=>require(['../components/pages/mycenter'],resolve),//MyCnterPage,
 			children:[]
 		}
 	]

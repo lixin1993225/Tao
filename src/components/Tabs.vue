@@ -26,7 +26,10 @@
 	export default{
 		name:'Tabs',
 		created(){
-			this.tabsCheck()
+			this.$router.afterEach((to,from)=>{
+				console.log(this.$route)
+				this.filter = this.$route.path.split('/')[1]||'index'
+			})
 		},
 		data(){
 			return {
@@ -36,15 +39,12 @@
 					{tab:'店铺',link:'/shops',ClickNum:'shops',CheImg:shopsCheImg,NoCheImg:shopsNoCheImg},
 					{tab:'我的',link:'/mycenter',ClickNum:'mycenter',CheImg:mycenterCheImg,NoCheImg:mycenterNoCheImg},
 				],
-				filter:'index'
+				filter:''
 			}
 		},
 		methods:{
 			ClickTabs:function(e){
 				this.filter = e
-			},
-			tabsCheck:function(){
-				this.filter = this.$route.path.split('/')[1]||'index'
 			}
 		}
 	}
